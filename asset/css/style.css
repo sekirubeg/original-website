@@ -1,0 +1,1218 @@
+@charset "utf-8";
+
+html {
+  scroll-behavior: smooth;
+}
+.no-scroll{
+  overflow: hidden;
+}
+/* フェードアウト用 */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+/* ヘッダー */
+.header {
+  height: 60px;
+  background-color: white;
+}
+
+.header-container {
+  height: 50px;
+  width: 100px;
+  margin: auto auto;
+}
+
+.header-container > img {
+  height: 100%;
+  width: 100%;
+  padding-top: 5px;
+}
+
+side-header.UpMove,
+#HbButton.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+/*====== 下に消えるアニメ ======*/
+#header.DownMove,
+#HbButton.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* サイドバー */
+.side-header {
+  position: fixed ;
+  top: 130px;
+  right: 140px;
+  background-color: #fff;
+  border-radius: 100vmax;
+  padding: 40px 5px;
+  padding-right: 40px;
+  padding-left: 10px;
+  z-index: 999;
+  border: 1px black solid;
+}
+.side-container {
+  margin-bottom: 30px;
+}
+.nav-list {
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+}
+.nav-link {
+  display: block;
+  margin: 25px 0;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: #333;
+  font-family: YakuHanJP;
+  font-weight: 600;
+  cursor: pointer;
+}
+.naganoken {
+  position: absolute;
+  top: 660px;
+  right: 270px;
+  height: 760px;
+}
+.slink {
+  color: #333;
+  display: inline-block;
+  margin: 3px 0;
+  font-family: YakuHanJP;
+  font-weight: 600;
+}
+.top {
+  padding-left: 8px;
+  border-left: 3px solid red;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.nav-list p{
+  transition: 400ms;
+}
+
+.t21:hover {
+  color: red;
+  opacity: 0.8;
+}
+.closebutton{
+  cursor: pointer;
+}
+.about {
+  padding-left: 8px;
+  border-left: 3px solid green;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.t22:hover {
+  color: green;
+  opacity: 0.8;
+}
+.area-link {
+  padding-left: 8px;
+  border-left: 3px solid aqua;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.t23:hover {
+  color: aqua;
+  opacity: 0.8;
+}
+.access-link {
+  padding-left: 8px;
+  border-left: 3px solid #dfe400;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.t24:hover {
+  color: #dfe400;
+  opacity: 0.8;
+}
+.photo-link {
+  padding-left: 8px;
+  border-left: 3px solid #333;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.t25:hover {
+  color: #333;
+  opacity: 0.8;
+}
+.nav-link {
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+.sns-list {
+  list-style: none;
+  font-size: 12px;
+  color: #333;
+}
+
+/* メイン */
+
+/* セクション１ */
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+HTML CSS JSResult Skip Results Iframe EDIT ON
+/*====================================================================
+slick
+====================================================================*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+.sliderArea {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slick-slide {
+  width: 100%;
+}
+
+.slick-slide > img {
+  width: 100%;
+  border-radius: 0 0 80% 80%;
+}
+.slider_thumb {
+  width: 100%;
+  transform: translateY(-220px);
+  z-index: -999;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.thumb {
+  margin: 30px auto;
+  transform: translateY(-500px);
+  width: 600px;
+}
+.thumb-img {
+  margin: 10px 20px;
+  width: 110px;
+}
+
+.thumb .slick-slide {
+  cursor: pointer;
+}
+
+.thumb .slick-slide:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  margin-left: 210px;
+  transform: translateY(-70px);
+}
+.text {
+  margin-left: 240px;
+  width: 500px;
+  transform: translateY(-140px);
+}
+.area-explain{
+  margin-left: 290px;
+  width: 420px;
+  margin-top: 60px;
+  position: relative;
+}
+.area-explain >img{
+  position: absolute;
+  width: 230px;
+  top: -70px;
+  left: 260px;
+}
+.area-explain > h2{
+  color: #625949;
+  font-size: 22px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: #625949 2px dotted;
+}
+.area-explain > p{
+  color: #625949;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.text > h2 {
+  color: #625949;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.text > p {
+  color: #625949;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+a.btn_17 {
+  margin-top: 130px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  transform: translateY(-100px);
+  text-decoration: none;
+  position: relative;
+  width: 140px;
+  margin-left: 90px;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  color: #ff5757;
+  background: #ffe0e0;
+  transition: 0.3s ease-in-out;
+}
+
+a.btn_17::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #ff5757;
+  transition: 0.2s;
+}
+
+a.btn_17:hover {
+  background: #ff5757;
+  color: #fff;
+}
+
+a.btn_17:hover::before {
+  top: 0;
+  left: 0;
+}
+.area-title {
+  position: relative;
+  width: 100vw;
+  text-align: center;
+}
+.section1 {
+  position: relative;
+}
+.thumb-logo > img {
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 650px;
+}
+.thumb-logo1 > img {
+  position: absolute;
+  top: -60px;
+  left: 455px;
+  right: 0;
+  width: 570px;
+}
+.access-title > h2 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 16px;
+  color: #7c6d57;
+}
+.area-title > h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #7c6d57;
+  margin-bottom: 100px;
+}
+.area-background{
+  height: 350px;
+  position: relative;
+}
+
+.area-background > img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.area-heading{
+  position: absolute;
+  top: 90px;
+  left: 250px;
+  width: 500px;
+}
+.area-heading > img{
+  width: 100%;
+}
+
+.area-image{
+  position:absolute;
+  width: 530px;
+  top: 110px;
+  right: 200px;
+}
+.area-image > img{
+  width: 100%;
+}
+.area-sight{
+  position: relative;
+}
+.sight-title{
+  position: absolute;
+  z-index: 999;
+  border-radius: 20px;
+  left: 290px;
+  top: 80px;
+  height: 500px;
+}
+.sight-title > img{
+  height: 80%;
+}
+.spot1{
+  position: absolute;
+  top: 52px;
+  left: 440px;
+  width: 60px;
+  z-index: 10000;
+}
+.spot2{
+  position: absolute;
+  top: 52px;
+  left: 725px;
+  width: 60px;
+  z-index: 10000;
+}
+.spot3{
+  position: absolute;
+  top: 52px;
+  left: 1010px;
+  width: 60px;
+  z-index: 10000;
+}
+
+.sight-content{
+  position: absolute;
+  display: flex;
+  width: 850px;
+  justify-content: space-around;
+  top:80px ;
+  left: 450px;
+}
+.sight1{
+  width: 29%;
+  text-align: center;
+}
+
+.sight2{
+  width: 29%;
+  text-align: center;
+}
+
+.sight3{
+  width: 29%;
+  
+}
+
+.sight1 >img{
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
+  text-align: center;
+}
+.sight-content h2{
+  text-align: center;
+  color: #7c6d57;
+  font-size: 22px;
+}
+.sight-content p{
+  margin: 0;
+  color: #625949;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.sight2 >img{
+  width: 100%;
+  height: 180px;
+  border-radius: 15px;
+}
+
+.sight3 >img{
+  width: 100%;
+  height: 180px;
+  border-radius: 15px; 
+}
+
+
+
+
+
+
+
+.link > p {
+  z-index: 999;
+}
+.section2 {
+  height: 1400px;
+}
+.kugiri0{
+  transform: translateY(630px);
+  width: 100%;
+}
+.kugiri {
+  transform: translateY(-90px);
+  width: 100%;
+}
+.kugiri3 {
+  width: 100%;
+  transform: translateY(-50px);
+}
+.kugiri4 {
+  width: 100%;
+  transform: translateY(-50px);
+}
+.kugiri5 {
+  width: 100%;
+
+}
+.access-circle {
+  text-align: center;
+  height: 200px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.circle-img {
+  width: 160px;
+  margin: 0 10px;
+}
+
+.area-title > img {
+  position: absolute;
+  top: -180px;
+  width: 600px;
+  transform: translateY(-80px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.access-title {
+  position: relative;
+}
+.access-title > img {
+  position: absolute;
+  top: -260px;
+  width: 600px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* ハンバーガーメニューのボックス */
+.openbtn {
+  position: fixed;
+  /* 固定表示 */
+  background: #fff;
+  /* 背景色 */
+  cursor: pointer;
+  /* マウスカーソル指 */
+  width: 80px;
+  /* 高さ */
+  height: 80px;
+  /* 横幅 */
+  border-radius: 50%;
+  /* 角を丸める */
+  right: 20px;
+  /* 表示位置右 */
+  top: 10px;
+  /* 表示位置上 */
+  margin: 20px;
+  /* 余白 */
+  border: 1px solid black;
+  z-index: 9999;
+}
+
+/* ハンバーガーメニューの線を定義 */
+.openbtn span {
+  display: inline-block;
+  /* 要素内ブロック */
+  position: absolute;
+  /* 絶対位置指定   */
+  height: 2px;
+  /* 線の太さ       */
+  width: 32px;
+  /* 線の長さ       */
+  background: #fff;
+  /* 線の色         */
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 9999;
+}
+
+/* span (1)番目の要素に適用 */
+.openbtn span:nth-of-type(1) {
+  top: 28px;
+  width: 50px;
+  background-color: pink;
+}
+
+/* span (2)番目の要素に適用 */
+.openbtn span:nth-of-type(2) {
+  top: 40px;
+  width: 35px;
+  background-color: purple;
+}
+
+/* span (3)番目の要素に適用 */
+.openbtn span:nth-of-type(3) {
+  top: 52px;
+  width: 20px;
+  background-color: green;
+}
+
+/*====== ヘッダーメニューデザイン ======*/
+
+/*====== 上に消えるアニメ ======*/
+#header.UpMove,
+#HbButton.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+/*====== 下に消えるアニメ ======*/
+#header.DownMove,
+#HbButton.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*====== Menuリンクデザイン ======*/
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+  padding: 36px;
+  transition: all 0.3s;
+}
+
+.closebutton {
+  position: absolute;
+  left: 60px;
+  border: none;
+  background-color: inherit;
+  z-index: 99999;
+  top: 30px;
+  color: #af9368;
+  opacity: 0.4;
+}
+
+/*=== コンテンツの開始位置 ===*/
+main {
+  padding-top: 72px;
+}
+
+.page_top_btn {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+
+  transform: translateX(100px);
+  z-index: 999;
+}
+
+.openbtn.open {
+}
+
+.slider {
+  margin-top: 50px;
+}
+
+.slider_loop_inner {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 20px;
+
+}
+
+.slider_loop_inner > li {
+  height: 100%;
+  width: 400px;
+  border-radius: 20px;
+}
+
+li img {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.slider_loop {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider_loop .slider_loop_inner {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider_loop .slider_loop_inner li {
+  float: left;
+}
+
+
+.kugiri5 {
+  display: block;
+  margin-top: 40px;
+  position: relative;
+}
+
+.footer-inner {
+  background-color: #f44336;
+  height: 24px;
+}
+.footer-inner > p {
+  margin: 0;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 23px;
+}
+
+.footer-header{
+    height: 200px;
+    margin: auto;
+    text-align: center;
+}
+.footer-header > img{
+    height: 100%;
+}
+.hidden {
+  display: none;
+}
+
+
+.openbtn:hover{
+  background-color: #ebebeb;
+  transition: 500ms;
+}
+
+.active{
+  height: 1330px;
+  position: relative;
+}
+.active-head{
+  position: relative;
+}
+.activity{
+  position: absolute;
+  top: 130px;
+  left: 240px;
+  width: 180px;
+}
+.active-image{
+  position: absolute;
+  top: 127px;
+  left: 370px;
+  width: 550px;
+}
+
+
+.active1{
+  position: absolute;
+  display: flex;
+  width: 750px;
+  height: 280px;
+  top: 300px;
+  left: 280px;
+}
+.active2{
+  position: absolute;
+  display: flex;
+  margin-top: 30px;
+  width: 750px;
+  height: 280px;
+  top: 600px;
+  left: 450px;
+}
+.active3{
+  position: absolute;
+  margin-top: 60px;
+  display: flex;
+  width: 750px;
+  height: 280px;
+  top: 900px;
+  left: 280px;
+}
+.active1 > img{
+  width: 330px;
+  height: 240px;
+}
+.active2 > img{
+  width: 330px;
+  height: 240px;
+}
+.active3 > img{
+  width: 330px;
+  height: 240px;
+}
+.explain{
+  width: 70%;
+}
+.explain > h2{
+  width: 100%;
+  color: #312818;
+   margin: 0;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.explain > p{
+  width: 100%;
+   color: #625949;
+  font-size: 13px;
+   margin-left: 40px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+
+a.btn_16 {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  transform: translateY(-100px);
+  text-decoration: none;
+  position: relative;
+  width: 140px;
+  margin-left: 250px;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  color: #ff5757;
+  background: #ffe0e0;
+  transition: 0.3s ease-in-out;
+}
+
+a.btn_16::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #ff5757;
+  transition: 0.2s;
+}
+
+a.btn_16:hover {
+  background: #ff5757;
+  color: #fff;
+}
+
+a.btn_16:hover::before {
+  top: 0;
+  left: 0;
+}
+
+
+.tokyo:hover{
+  transform: translateY(-7px);
+  
+  transition: 0.5s;
+}
+.osaka:hover{
+  transform: translateY(-7px);
+  
+  transition: 0.5s;
+}
+.hakkaido:hover{
+  transform: translateY(-7px);
+  transition: 0.5s;
+}
+.nagoya:hover{
+  transform: translateY(-7px);
+  transition: 0.5s;
+}
+.hukuoka:hover{
+  transform: translateY(-7px);
+  transition: 0.5s;
+}
+.area4{
+  width: 800px;
+  position: absolute;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 70px;
+  
+}
+.area4 > img{
+  width: 13%;
+  margin: 0 20px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.area4 > img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+
+
+.access-title > h2{
+  margin-bottom: 50px;
+}
+
+.a10:before{
+  content:"";
+  border-radius: 20px;
+  width:420px;
+  height:280px;
+  position:absolute;
+  z-index:2;
+  background:#000;/*好みの色に変えてください。*/
+  opacity:0;
+  transition:0.3s;
+}
+
+.a10:hover:after{
+  opacity:1;
+  margin-top:-0.5em;
+}
+
+.a11:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+  content:"\a\a\A上高地\a\A住所\A長野県松本市\a安曇上高地";
+  white-space: pre;
+  color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  font-weight:600;
+  transition:0.3s;
+
+  letter-spacing:0.2em;
+}
+.a12:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+  content:"か";/*好みの文章に変更してください。*/
+ color:#fff;
+  line-height:48px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a13:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+  content:"\a\a\A地獄谷野猿公苑\a\A住所\A長野県下高井郡\a山ノ内町平穏6845";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a14:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+  content:"\a\a\A松本城\a\A住所\A長野県松本市\a丸の内４−１";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a15:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+  content:"\a\a\A善光寺\a\A住所\A長野県長野市\a長野元善町 491";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a16:hover:before{
+  opacity:0.6;
+  content:"\a\a\A高ボッチ高原\a\A住所\A長野県塩尻市\a大字片丘";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  text-decoration: none;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a17:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+  content:"\a\a\A軽井沢高原協会\a\A住所\A長野県軽井沢町星野";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a18:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+content:"\a\a\A御釈迦池\a\A住所\A長野県茅野市\a豊平奥蓼科";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a19:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+  content:"\a\a\A戸隠神社 奥社\a\A住所\A長野県長野市\a戸隠３５０６";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a20:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+  content:"\a\a\A白糸の滝\a\A住所\A長野県北佐久郡\a軽井沢町長倉";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a21:hover:before{
+  opacity:0.6;
+  text-decoration: none;
+ content:"\a\a\A美ヶ原高原\a\A住所\A長野県上田市\a武石上本入";/*好みの文章に変更してください。*/
+  white-space: pre;
+ color:#fff;
+  line-height:24px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:90000;
+  transition:0.3s;
+  font-weight:600;
+  letter-spacing:0.2em;
+}
+.a22:hover:before{
+  opacity:0.4;
+  text-decoration: none;
+  content:"";/*好みの文章に変更してください。*/
+ color:#fff;
+  line-height:48px;
+  width:180px;
+  border:solid 1px #fff;
+  border-radius:12px 0 0 12px;
+  text-align:center;
+  z-index:3;
+  transition:0.3s;
+  font-weight:bold;
+  letter-spacing:0.2em;
+}
+
+
+
+/* ロード画面 */
+#loading {
+    position: fixed;
+    z-index: 9000000;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+/* ロード中のスピナー（アニメーション） */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* フェードアウト用 */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* メインコンテンツ（最初は非表示） */
+#content {
+    display: none;
+}
