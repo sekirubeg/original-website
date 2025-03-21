@@ -1,11 +1,11 @@
-window.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    // 4秒後にロード画面を非表示
-    document.getElementById("loading").classList.add("hidden");
-    // スクロールを有効化
-    document.body.classList.remove("no-scroll");
-  }, 4000); // 4秒後に実行
-});
+// window.addEventListener("DOMContentLoaded", function () {
+//   setTimeout(function () {
+//     // 4秒後にロード画面を非表示
+//     document.getElementById("loading").classList.add("hidden");
+//     // スクロールを有効化
+//     document.body.classList.remove("no-scroll");
+//   }, 4000); // 4秒後に実行
+// });
 
 $(document).ready(function () {
   $(".slider_thumb").slick({
